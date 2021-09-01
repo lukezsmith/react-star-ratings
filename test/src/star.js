@@ -101,13 +101,6 @@ class Star extends React.Component {
       svgIconPath
     } = this.props;
     return (
-      <div
-        className="star-container"
-        style={this.starContainerStyle}
-        onMouseEnter={hoverOverStar}
-        onMouseLeave={unHoverOverStar}
-        onClick={changeRating}
-      >
         <svg
           viewBox={svgIconViewBox}
           className={this.starClasses}
@@ -119,7 +112,6 @@ class Star extends React.Component {
             d={svgIconPath}
           />
         </svg>
-      </div>
     );
   }
 }
