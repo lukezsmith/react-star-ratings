@@ -74,11 +74,7 @@ var StarRatings = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        {
-          className: 'star-ratings',
-          title: this.titleText,
-          style: this.starRatingsStyle
-        },
+        null,
         _react2.default.createElement(
           'svg',
           {
