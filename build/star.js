@@ -46,27 +46,17 @@ var Star = function (_React$Component) {
           svgIconPath = _props.svgIconPath;
 
       return _react2.default.createElement(
-        'div',
+        'svg',
         {
-          className: 'star-container',
-          style: this.starContainerStyle,
-          onMouseEnter: hoverOverStar,
-          onMouseLeave: unHoverOverStar,
-          onClick: changeRating
+          viewBox: svgIconViewBox,
+          className: this.starClasses,
+          style: this.starSvgStyle
         },
-        _react2.default.createElement(
-          'svg',
-          {
-            viewBox: svgIconViewBox,
-            className: this.starClasses,
-            style: this.starSvgStyle
-          },
-          _react2.default.createElement('path', {
-            className: 'star',
-            style: this.pathStyle,
-            d: svgIconPath
-          })
-        )
+        _react2.default.createElement('path', {
+          className: 'star',
+          style: this.pathStyle,
+          d: svgIconPath
+        })
       );
     }
   }, {
