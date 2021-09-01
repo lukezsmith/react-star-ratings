@@ -152,7 +152,6 @@ class StarRatings extends React.Component {
     } = this.props;
     
     return (
-      <div>
         <svg
           className="star-grad"
           style={this.starGradientStyle}
@@ -166,8 +165,6 @@ class StarRatings extends React.Component {
             </linearGradient>
           </defs>
         </svg>
-        {this.renderStars}
-        </div>
     );
   }
 }

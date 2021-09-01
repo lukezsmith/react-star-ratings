@@ -73,28 +73,23 @@ var StarRatings = function (_React$Component) {
 
 
       return _react2.default.createElement(
-        'div',
-        null,
+        'svg',
+        {
+          className: 'star-grad',
+          style: this.starGradientStyle
+        },
         _react2.default.createElement(
-          'svg',
-          {
-            className: 'star-grad',
-            style: this.starGradientStyle
-          },
+          'defs',
+          null,
           _react2.default.createElement(
-            'defs',
-            null,
-            _react2.default.createElement(
-              'linearGradient',
-              { id: this.fillId, x1: '0%', y1: '0%', x2: '100%', y2: '0%' },
-              _react2.default.createElement('stop', { offset: '0%', className: 'stop-color-first', style: this.stopColorStyle(starRatedColor) }),
-              _react2.default.createElement('stop', { offset: this.offsetValue, className: 'stop-color-first', style: this.stopColorStyle(starRatedColor) }),
-              _react2.default.createElement('stop', { offset: this.offsetValue, className: 'stop-color-final', style: this.stopColorStyle(starEmptyColor) }),
-              _react2.default.createElement('stop', { offset: '100%', className: 'stop-color-final', style: this.stopColorStyle(starEmptyColor) })
-            )
+            'linearGradient',
+            { id: this.fillId, x1: '0%', y1: '0%', x2: '100%', y2: '0%' },
+            _react2.default.createElement('stop', { offset: '0%', className: 'stop-color-first', style: this.stopColorStyle(starRatedColor) }),
+            _react2.default.createElement('stop', { offset: this.offsetValue, className: 'stop-color-first', style: this.stopColorStyle(starRatedColor) }),
+            _react2.default.createElement('stop', { offset: this.offsetValue, className: 'stop-color-final', style: this.stopColorStyle(starEmptyColor) }),
+            _react2.default.createElement('stop', { offset: '100%', className: 'stop-color-final', style: this.stopColorStyle(starEmptyColor) })
           )
-        ),
-        this.renderStars
+        )
       );
     }
   }, {

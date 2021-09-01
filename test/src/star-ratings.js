@@ -152,11 +152,6 @@ class StarRatings extends React.Component {
     } = this.props;
     
     return (
-      <div
-        className="star-ratings"
-        title={this.titleText}
-        style={this.starRatingsStyle}
-      >
         <svg
           className="star-grad"
           style={this.starGradientStyle}
@@ -169,9 +164,8 @@ class StarRatings extends React.Component {
               <stop offset="100%" className="stop-color-final" style={this.stopColorStyle(starEmptyColor)} />
             </linearGradient>
           </defs>
+          FUCLLLL
         </svg>
-        {this.renderStars}
-      </div>
     );
   }
 }
